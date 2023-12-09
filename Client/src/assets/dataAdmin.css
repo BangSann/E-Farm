@@ -1,0 +1,9 @@
+.navbar{
+    height: 10vh;
+    padding: 5px;
+    text-align: start;
+}
+.container-fluid{
+    margin: auto;
+    margin-left: 0;
+}

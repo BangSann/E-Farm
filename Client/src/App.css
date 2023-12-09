@@ -1,0 +1,472 @@
+/* start css umum */
+.main{
+  margin: 0 60px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+}
+html{
+  scroll-behavior: smooth;
+}
+a:hover{
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+}
+/* end css umum */
+/* footer */
+footer{
+  height: 40vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: url('./footer.png');
+  background-size: cover;
+}
+footer img{
+  width: 20%;
+  margin: auto;
+  margin-top: 10vh;
+}
+footer p{
+  margin: auto;
+  color: #ffffff;
+  margin-bottom: 1vh;
+}
+/* footer end */
+/* Nav side start */
+.nav-side{
+  box-shadow: 0px 3px 15px 0 rgba(0, 0, 0, 0.435);
+  position: fixed;
+  z-index: 1;
+  background:linear-gradient(#8FBD15 40%, #ffffff);
+  height: 100vh;
+  width: 50%;
+  margin: 0px auto 0px 41%;
+  color: #f9f9f9;
+  padding: 0%;
+  display: none;
+  animation: animation1;
+  animation-duration: 0.5s;
+  text-align: center;
+}
+.nav-side .btn-close{
+  background-color: #ff0000;
+  position: fixed;
+  border: none;
+  margin: 5px;
+  top: 0;
+  right: 5%;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+}
+.profile div{
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
+.profile div label {
+  width: 30%;
+  text-align: start;
+  float: left;
+  padding: 5px;
+}
+.profile div input{
+  width: 70%;
+  float: right;
+  padding: 5px;
+  padding-left: 10px;
+  color: rgb(80, 80, 80);
+  border-radius: 30px;
+  border: none;
+}
+.profile div input:hover{
+  box-shadow: 0px 3px 7px 0 rgba(255, 253, 253, 0.435);
+}
+.profile button{
+  background-color: #8FBD15;
+  width: 30%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+}
+.profile button:hover{
+  box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.435);
+}
+.btn-close:hover{
+  box-shadow: 0px 3px 7px 0 rgba(255, 253, 253, 0.435);
+  background-color: #ffffff;
+  color: #ff0000;
+}
+.profile button:not(:last-child){
+  margin-top: 40%;
+}
+@keyframes animation1 {
+ from{opacity: 0;}
+ to{opacity: 1;}
+}
+.nav-side.active{
+  display: block;
+}
+/* Nav side end */
+/* Navbar Start */
+nav{
+  background-color: #ffffff;
+  margin: 0 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+}
+.nav-img{
+  width: 20%;
+  margin: auto;
+}
+.nav-img img {
+  width: 100%;
+}
+.nav-img.hide{
+  display: none;
+}
+.nav-img.show{
+  display: block;
+}
+._navbar{
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+  width: 40%;
+}
+._navbar ul {
+  padding: 0%;
+}
+._navbar.kanan ul{
+  margin: auto;
+  margin-right: 0;
+}
+.data-admin.hide{
+  display: none;
+}
+._navbar.kiri ul{
+  margin: auto;
+  margin-left: 0;
+}
+._navbar ul li{
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+._navbar ul li:hover{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.197);
+}
+._navbar ul li a{
+  color: black;
+  font-weight:500;
+}
+.navbar-banner{
+  display: flex;
+  margin: 0 10px;
+  height: 85vh;
+}
+.navbar-banner img {
+  height: 100%;
+  margin: auto;
+}
+/* Navbar End */
+/* Kategori Start*/
+.kategori{
+  margin: 150px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0px 3px 2px 0 rgba(0, 0, 0, 0.435);
+  border-radius: 3px;
+}
+.kategori h1 {
+  font-weight: 700;
+}
+.kategori-item-container{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.kategori-item{
+  width: 30%;
+  margin: 5px;
+  padding: 10px 30px;
+}
+.kategori-item:hover{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.197);
+}
+.kategori-item img{
+  width: 100%;
+}
+.kategori-item a{
+  color: black;
+}
+/* Kategori End */
+/* list Start */
+.container-barang{
+  margin: 0 10px;
+}
+.list-header{
+  margin-top: 2.5vh;
+  height: 15vh;
+  border-radius: 5px;
+  display: flex;
+  background: #8FBD15;
+  border-radius: 5px;
+  box-shadow: 0px 3px 2px 0 rgba(0, 0, 0, 0.435);
+}
+.list-header div{
+  margin: auto;
+  display: flex;
+}
+.list-header div h1,.list-header div img {
+  padding: 10px;
+}
+.list-header div h1{
+  font-weight: 700;
+  color:  #FFD527;
+}
+.list{
+  margin-top: 2.5vh;
+  overflow: hidden;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+.box-list{
+  transition: 2s;
+  margin: 30px;
+  height: 50vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+/* img */
+.box-list img{
+  width: 245px;
+}
+.radio-btn{
+  display: none;
+}
+#radio1:checked ~ .first-kendaraan{
+  margin-left: 30px;
+}
+#radio2:checked ~ .first-kendaraan{
+  margin-left: -99%;
+}
+#radio3:checked ~ .first-peralatan{
+  margin-left: 30px;
+}
+#radio4:checked ~ .first-peralatan{
+  margin-left: -99%;
+}
+#radio5:checked ~ .first-benih{
+  margin-left: 30px;
+}
+#radio6:checked ~ .first-benih{
+  margin-left: -99%;
+}
+.label{
+  margin-top: 10px;
+  color: black;
+  font-size: larger;
+  padding: 5px;
+  height: 20%;
+}
+.harga{
+  color: #ff0000;
+}
+.box-list button{
+  width: 80%;
+  margin: auto;
+  border: none;
+  background-color: #ffffff;
+  color: #ff0000;
+  font-weight: 700;
+  bottom: 0;
+}
+.box-list button:hover{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.197);
+}
+.button-container{
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  bottom: 10vh;
+  align-items: center;
+  align-content: center;
+}
+
+.button-container button {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  background-color: #FFD527;
+  position: relative;
+  border-radius: 10px;
+  border: none;
+  font-size: 2em;
+  padding: 5px;
+  margin: 10px 30px;
+}
+.button-container button:hover{
+  background-color: #8FBD15;
+}
+.prev{
+  float: left;
+}
+.next{
+  float: right;
+}
+/* List End */
+/* form beli start */
+.modal-container{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #00000039;
+  height: 100vh;
+  width: 100%;
+  animation: animation2;
+  animation-duration: 0.3s;
+}
+@keyframes animation2 {
+  from{top: -50%;}
+  to{background-color:#00000039}
+}
+.tutup-formbeli-btn{
+  background-color: #ff4949;
+  margin: auto;
+  width: 10%;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+.tutup-formbeli-btn:hover{
+  background-color: #ff0000;
+}
+.modal-container.active{
+  display: flex;
+  flex-direction: column;
+}
+.img-container{
+  width: 40%;
+  display: flex;
+  background-color: #f9f9f9;
+  border-radius: 30px 0 0 30px ;
+}
+.img-container img{
+  margin: auto;
+  width: 100%;
+}
+.modal-item{
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: 0  auto auto auto;
+  text-align: center;
+  background-color:#8FBD15;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+.dataBarang{
+  width: 60%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+.dataBarang hr {
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  width: 100%;
+}
+.dataBarang p:not(:last-child){
+  text-align: justify;
+}
+.namaHarga{
+  text-align: start;
+  padding-top:10vh ;
+  height: 25vh;
+}
+.namaHarga p{
+  color: #ffffff;
+}
+.namaHarga h2{
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+.namaHarga p{
+  padding-left: 1%;
+  margin: 0%;
+}
+.calculate{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.calculate h4{
+  font-weight: bold;
+}
+.calculate div{
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+.calculate div:last-child{
+  padding-right: 15%;
+}
+.setJumlah button , .setJumlah input {
+  border-radius: 100px;
+  text-align: center;
+  border: none;
+  background-color: #042D19;
+  color: #ffffff;
+}
+.setJumlah button{
+  width: 10%;
+}
+.setJumlah input{
+  padding:10px;
+  margin: 0 2.5%;
+  width: 20%;
+}
+.getJumlah input{
+  background-color: #042D19;
+  border-radius: 100px;
+  padding: 10px;
+  color: #ffffff;
+  border: none;
+}
+.btn-beli{
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: #FFD527;
+  width: 70%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+/* form beli end */
